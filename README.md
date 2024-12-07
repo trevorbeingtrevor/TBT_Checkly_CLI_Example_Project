@@ -1,15 +1,12 @@
 # Checkly Monitoring-as-code: Advanced Project
 
-This example project shows how you can use the Checkly CLI in a monitoring as code (MaC) workflow. We are using the
-https://checklyhq.com website as a monitoring target.
+This example project shows how you can use the Checkly CLI in a monitoring as code (MaC) workflow. It was generated using `npm checkly create` and selecting `An advanced TypeScript project with multiple examples and best practices (recommended)` for the template. The file `./src/__checks__/check-from-dashboard.check.ts` has been added 
+
+We are using the https://checklyhq.com website as a monitoring target.
 
 1. Write API Checks and Playwright-powered Browser Checks.
 2. Add Alert Channels, and dry-run your Checks on 20+ global locations.
 3. Test -> Deploy: now you have your app monitored around the clock. All from your code base.
-
-```
-npm create checkly -- --template advanced-project
-```
 
 ## Project Structure
 
