@@ -1,9 +1,11 @@
 /*
 * This is a check that was created in the users Checkly account and then brought into the CLI project
 * To do the same, navigate to your dashboard (home) of your checkly account in the browser. 
-* Once there, open up the drop down menu on the right hand side of each check using the button represented by three vertical dots. 
-* In the drop down, click the “Export to code” option, download the files and copy them into this .src/__checks__ folder. 
-* Repeat this for each check you want to bring into your code.
+* Once there, open up the drop down menu on the right hand side of each check using the button 
+* represented by three vertical dots. 
+* 
+* In the drop down, click the “Export to code” option, download the files 
+* and copy them into this ./src/__checks__ folder. Repeat this for each check you want to bring into your code.
 * 
 * Once the tests are in your code, rename the old ones in the dashboard. 
 * This will help you identify them when you deploy later. Once you know the tests from your project are working, 
@@ -14,10 +16,10 @@
 import { ApiCheck, Frequency, RetryStrategyBuilder } from 'checkly/constructs'
 
 /*
-* Added this import below to set up an email alert.
+* This import was added below to set up an email alert.
 * Make sure to configure the ./src/alert-channels.ts file too!
 * 
-* See the here for more detail...
+* See the link below for more detail...
 * https://www.checklyhq.com/docs/cli/using-constructs/#creating-and-adding-an-alert-channel
 */
 import { emailChannel } from '../alert-channels' 
