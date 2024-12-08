@@ -5,16 +5,18 @@
 * In the drop down, click the “Export to code” option, download the files and copy them into this .src/__checks__ folder. 
 * Repeat this for each check you want to bring into your code.
 * 
-* Once the tests are in your code, renaming the old ones in the dashboard because they will appear as duplicates when you deploy. 
-* Once you know everything is working, delete the old tests. 
-* Keep in mind, you can use the timestamp of the first check as a guide if you forget to rename them beforehand. 
+* Once the tests are in your code, rename the old ones in the dashboard because they will appear as duplicates when you deploy. 
+* Finally, once you know everything is working, delete the old tests. Keep in mind, you can use the timestamp of the first check as a guide if you forget to rename them beforehand. 
 */
 
 import { ApiCheck, Frequency, RetryStrategyBuilder } from 'checkly/constructs'
 
 /*
-* Added this import manually to set up an email alert.
-* Make sure to configure the ./src/alert-channels.ts according too!
+* Added this import below to set up an email alert.
+* Make sure to configure the ./src/alert-channels.ts file too!
+* 
+* See the here for more detail...
+* https://www.checklyhq.com/docs/cli/using-constructs/#creating-and-adding-an-alert-channel
 */
 import { emailChannel } from '../alert-channels' 
 

@@ -20,7 +20,7 @@ export const smsChannel = new SmsAlertChannel('sms-channel-1', {
 })
 
 /*
-* Set up your email alert here, but make sure you import it into your check. 
+* Set up your email alert here, but make sure you import it into your check as well. 
 * See the docs for more detail as well as the ./src/__checks__/check-from-dashboard.check.ts for an example...
 * https://www.checklyhq.com/docs/cli/using-constructs/#creating-and-adding-an-alert-channel
 */
