@@ -5,8 +5,10 @@
 * In the drop down, click the “Export to code” option, download the files and copy them into this .src/__checks__ folder. 
 * Repeat this for each check you want to bring into your code.
 * 
-* Once the tests are in your code, rename the old ones in the dashboard because they will appear as duplicates when you deploy. 
-* Finally, once you know everything is working, delete the old tests. Keep in mind, you can use the timestamp of the first check as a guide if you forget to rename them beforehand. 
+* Once the tests are in your code, rename the old ones in the dashboard. 
+* This will help you identify them when you deploy later. Once you know the tests from your project are working, 
+* then feel free to delete the old tests. Keep in mind, you can use the timestamps of the checks as a guide 
+* if you forget to rename them beforehand. 
 */
 
 import { ApiCheck, Frequency, RetryStrategyBuilder } from 'checkly/constructs'
@@ -22,7 +24,7 @@ import { emailChannel } from '../alert-channels'
 
 new ApiCheck('check-from-dashboard', {
   name: 'Check_From_Dashboard',
-  alertChannels: [emailChannel], // used import here
+  alertChannels: [emailChannel], // added alertChannels property for email here
   activated: true,
   muted: false,
   shouldFail: false,
