@@ -1,6 +1,6 @@
 # Checkly Monitoring-as-code: Advanced Project
 
-This example project shows how you can use the Checkly CLI in a monitoring as code (MaC) workflow. It was generated using the `npm checkly create`command and selecting the `An advanced TypeScript project with multiple examples and best practices (recommended)` option for the template. In addition, the file `./src/__checks__/check-from-dashboard.check.ts` has been added to demonstrate how to bring in previous projects from the dashboard and implement email alerts.
+This example project shows how you can use the Checkly CLI in a monitoring as code (MaC) workflow. It was generated using the `npm checkly create`command and selecting the `An advanced TypeScript project with multiple examples and best practices (recommended)` option for the template. The file `./src/__checks__/check-from-dashboard.check.ts` has been added to demonstrate how to bring in previous projects from the dashboard and implement email alerts.
 
 We are using the https://checklyhq.com website as a monitoring target.
 
